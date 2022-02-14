@@ -1,0 +1,165 @@
+html {
+	height: 100%;
+}
+body {
+	width: 100%;
+	height: 100%;
+	margin: 0;    
+	padding: 0;
+}
+.wrapper {
+	min-height: 100%;
+	height: auto !important;
+	height: 100%;
+}
+#logo {
+    margin-top: 0px;
+    width: 100px;
+	height: 100px;
+    position: static;
+}
+@import url('https://fonts.googleapis.com/css?family=Arimo');
+.top-menu {
+  background: rgba(255,255,255,.5);
+  box-shadow: 3px 0 7px rgba(0,0,0,.3);
+  padding: 20px;
+}
+.top-menu:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.navbar-logo {display: inline-block;}
+.menu-main {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+.menu-main li {display: inline-block;}
+.menu-main a {
+  text-decoration: none;
+  display: block;
+  position: relative;
+  line-height: 61px;
+  padding-left: 20px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-family: 'Arimo', sans-serif;
+  font-weight: bold;
+  color: #F73E24;
+  transition:.3s linear;
+}
+.menu-main a:before {
+  content: "";
+  width: 9px;
+  height: 9px;
+  background: #F73E24;
+  position: absolute;
+  left: 50%;
+  transform: rotate(45deg) translateX(6.5px);
+  opacity: 0;
+  transition: .3s linear;
+}
+.menu-main a:hover:before {opacity: 1;}
+@media (max-width: 660px) {
+.menu-main {
+  float: none;
+  padding-top: 20px;
+}
+.top-menu {
+  text-align: center;
+  padding: 20px 0 0 0;
+}
+.menu-main a {padding: 0 10px;}
+.menu-main a:before {transform: rotate(45deg) translateX(-6px);}
+}
+@media (max-width: 600px) {
+.menu-main li {display: block;}
+}
+.wrp {
+	width: 960px;
+	margin: 0 auto;
+	position: absolute;
+    color: black;
+    
+}
+.wrp1 {
+	width: 960px;
+	margin: 0 auto;
+	position: relative;
+    color: rgba(0, 0, 0, 0.377);
+    
+}
+.wrp2 {
+	width: 960px;
+	margin: 0 auto;
+	position: relative;
+    color: black;
+    
+}
+.header {
+
+	background: #B39DDB;
+}
+.middle {
+	width: 100%;
+	padding: 0 0 100px;
+	position: relative;
+}
+.middle:after {
+	display: table;
+	clear: both;
+	content: '';
+}
+.container {
+	width: 100%;
+	float: left;
+	overflow: hidden;
+}
+.rating-mini {
+	display: inline-block;
+	font-size: 0;
+}
+.rating-mini span {
+	padding: 0;
+	font-size: 20px;
+	line-height: 1;
+	color: lightgrey;
+}
+.rating-mini > span:before {
+	content: '★';
+}
+.rating-mini > span.active {
+	color: gold;
+}
+.photo {
+width: 1px;
+height: 1px;
+}
+.content {
+	padding: 0 260px 0 260px;
+	min-height: 200px;
+}
+.leftcol {
+	float: left;
+	width: 240px;
+	margin-left: -100%;
+	position: relative;
+	min-height: 200px;	
+	background: #f06291;
+}
+.rightcol {
+	float: left;
+	width: 240px;
+	margin-left: -240px;
+	position: relative;
+	min-height: 200px;	
+	background: #f06291;
+}
+.footer {
+	margin: -100px 0 0 0;
+	height: 100px;
+	position: relative;
+	background: #f7cfad;	
+}

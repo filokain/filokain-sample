@@ -133,6 +133,20 @@ body {
 .rating-mini > span.active {
 	color: gold;
 }
+.teach {
+	position: fixed;
+	color: rgba(0,0,0,0.6);
+text-shadow: 2px 2px 3px rgba(255,255,255,0.1);
+font-size: 26px;
+margin-left: 6%;
+text-align: center;
+text-decoration: none;
+margin: 0;
+padding-top: 16px; 
+}	
+
+}
+
 .photo {
 width: 1px;
 height: 1px;
